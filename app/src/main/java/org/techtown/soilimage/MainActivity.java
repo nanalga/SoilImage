@@ -1,15 +1,14 @@
 package org.techtown.soilimage;
 
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.os.Bundle;
-
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+
 
 public class MainActivity extends AppCompatActivity {
     private long time= 0;
@@ -23,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
         gallery_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent galleryIntent = new Intent(MainActivity.this, GalleryImport.class);
-                startActivity(galleryIntent);
+                Intent gintent = new Intent(MainActivity.this, GalleryImport.class);
+                startActivity(gintent);
             }
         });
 
@@ -32,12 +31,12 @@ public class MainActivity extends AppCompatActivity {
         takePicture_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent takePictureIntent = new Intent(MainActivity.this, TakePicture.class);
-                startActivity(takePictureIntent);
+                Intent pintent = new Intent(MainActivity.this, TakePicture.class);
+                startActivity(pintent);
             }
         });
-    }
 
+    }
     //뒤로가기 버튼을 두번 연속으로 눌러야 종료되게끔 하는 메소드
     @Override
     public void onBackPressed(){

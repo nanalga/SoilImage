@@ -97,7 +97,9 @@ public class ImageResizeUtils {
                 resizedBitmap.compress(CompressFormat.JPEG, 80, new FileOutputStream(newFile));
 
             } else {
+
                 resizedBitmap.compress(CompressFormat.PNG, 80, new FileOutputStream(newFile));
+
             }
 
 

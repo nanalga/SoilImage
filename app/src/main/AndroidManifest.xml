@@ -20,6 +20,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".GalleryImport"></activity>
+        <activity android:name=".TakePicture"></activity>
         <!-- crop activity -->
         <activity
             android:name="com.soundcloud.android.crop.CropImageActivity"
